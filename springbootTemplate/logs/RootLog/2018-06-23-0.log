@@ -1,0 +1,45 @@
+2018-06-23 00:53:45.064 [main] INFO  com.example.demo01.Demo01Application -Starting Demo01Application on hufeideMacBook-Pro.local with PID 19950 (/Users/hufei/Desktop/springboot/demo01/target/classes started by hufei in /Users/hufei/Desktop/springboot/demo01)
+2018-06-23 00:53:45.068 [main] INFO  com.example.demo01.Demo01Application -No active profile set, falling back to default profiles: default
+2018-06-23 00:53:45.097 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3569fc08: startup date [Sat Jun 23 00:53:45 CST 2018]; root of context hierarchy
+2018-06-23 00:53:45.748 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d32ad0dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-23 00:53:45.974 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8888 (http)
+2018-06-23 00:53:45.985 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8888"]
+2018-06-23 00:53:45.993 [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2018-06-23 00:53:45.993 [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-23 00:53:45.999 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hufei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-06-23 00:53:46.161 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner -At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-06-23 00:53:46.163 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/demo01] -Initializing Spring embedded WebApplicationContext
+2018-06-23 00:53:46.163 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 1066 ms
+2018-06-23 00:53:46.241 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean -Servlet dispatcherServlet mapped to [/]
+2018-06-23 00:53:46.244 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-23 00:53:46.379 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-23 00:53:46.388 [main] INFO  org.hibernate.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-23 00:53:46.438 [main] INFO  org.hibernate.Version -HHH000412: Hibernate Core {5.2.17.Final}
+2018-06-23 00:53:46.439 [main] INFO  org.hibernate.cfg.Environment -HHH000206: hibernate.properties not found
+2018-06-23 00:53:46.469 [main] INFO  org.hibernate.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-23 00:53:46.647 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+2018-06-23 00:53:46.815 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+2018-06-23 00:53:46.823 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-06-23 00:53:46.979 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-23 00:53:47.043 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/index]}" onto public org.springframework.web.servlet.ModelAndView com.example.demo01.controller.UserController.index(org.springframework.web.servlet.ModelAndView)
+2018-06-23 00:53:47.045 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/test],methods=[POST]}" onto public com.example.demo01.domain.ResultEntity<java.lang.String> com.example.demo01.controller.UserController.test()
+2018-06-23 00:53:47.048 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-23 00:53:47.049 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-23 00:53:47.168 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3569fc08: startup date [Sat Jun 23 00:53:45 CST 2018]; root of context hierarchy
+2018-06-23 00:53:47.207 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in exceptionHandle
+2018-06-23 00:53:47.322 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-23 00:53:47.685 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-06-23 00:53:47.686 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-23 00:53:47.692 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-23 00:53:47.701 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8888"]
+2018-06-23 00:53:47.723 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool -Using a shared selector for servlet write/read
+2018-06-23 00:53:47.742 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8888 (http) with context path '/demo01'
+2018-06-23 00:53:47.746 [main] INFO  com.example.demo01.Demo01Application -Started Demo01Application in 22.962 seconds (JVM running for 33.625)
+2018-06-23 00:55:31.252 [Thread-49] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3569fc08: startup date [Sat Jun 23 00:53:45 CST 2018]; root of context hierarchy
+2018-06-23 00:55:31.254 [Thread-49] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2018-06-23 00:55:31.255 [Thread-49] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -Unregistering JMX-exposed beans
+2018-06-23 00:55:31.255 [Thread-49] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-06-23 00:55:31.256 [Thread-49] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+2018-06-23 00:55:31.262 [Thread-49] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.

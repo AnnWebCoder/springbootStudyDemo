@@ -1,0 +1,68 @@
+spring:
+  # MySQL数据库
+  datasource:
+    # MySQL链接方式
+    driver-class-name: com.mysql.jdbc.Driver
+    # 数据库连接串
+    url: jdbc:mysql://127.0.0.1:3306/ann_mysql?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    # 数据库用户名
+    username: root
+    # 数据库用户密码
+    password: annroot
+    # 配置阿里Druid数据源
+    # 配置监控统计拦截的filers,去掉后监控界面sql将无法统计，'wall'用于防火墙
+    fliters: stat,wall,log4j
+    # 最大活跃数
+    maxActive: 20
+    # 初始化数量
+    initialSize: 1
+    # 最小空闲连接
+    minIdle : 1
+    # 最大连接等待时间
+    maxWait: 60000
+    # 打开PSCache，并且制定每个连接的PSCache的大小
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    # 通过connectionProperties属性来打开mergeSql功能：慢sql记录
+    # connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    # 空闲连接回收器线程间休眠的时间,以毫秒为单位
+    tsimeBetweenEvictionRunsMillis: 60000
+    # 连接在池中最小生存的时间，单位是毫秒
+    minEvictableIdleTimeMillis: 25200000
+    # 验证连接是否有效
+    validationQuery: SELECT 1 from dual
+    # 申请连接时是否做validationQuery检测
+    testOnBorrow: false
+    # 释放连接时是否做validationQuery检测
+    testOnReturn: false
+    testWhileIdle: true
+    # 连接回收时间，单位秒
+    removeAbandonedTimeout: 1800
+    # 打开removeAbandoned功能：超过连接回收时间，回收连接。
+    removeAbandoned: true
+    # 连接被回收时是否打印程序的stack traces日志
+    logAbandoned: true
+  # 数据库持久层
+  jpa:
+      database: MySQL
+      show-sql: true
+      hibernate:
+        naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+        # 设置是否自动生成表
+        ddl-auto: none
+# 修改访问端口与路径，例如：127.0.0.1:8888/course-contests/test
+server:
+  port: 8888
+  servlet:
+    context-path: /demo01
+# thymeleaf模板引擎
+thymeleaf:
+  cache: false
+  mode: HTML5
+  encoding: utf-8
+  content-type: text/html
+  prefix: classpath:/templates/
+
+project:
+  imagesPath: file/logos/
+
